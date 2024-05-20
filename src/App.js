@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import LandingPage from "./pages/LandingPage";
 // import AboutUs from "./pages/AboutUs.js";
+
 import Contact from "./pages/Contact";
 import Quiz from "./pages/Quiz";
 import Destination from "./pages/Destination";
