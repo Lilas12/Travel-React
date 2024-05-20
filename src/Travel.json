@@ -1,0 +1,361 @@
+[
+  {
+    "id": "1",
+    "name": "Albania",
+    "image": "/TravelImage/albania.png",
+
+    "price": "3500 Kr"
+  },
+
+  {
+    "id": "2",
+    "name": "Förenade Arabemiraten",
+
+    "image": "/TravelImage/arabemiraten.png",
+
+    "price": "9500 Kr"
+  },
+
+  {
+    "id": "3",
+    "name": "Aruba",
+    "image": "/TravelImage/aruba.png",
+    "price": "5000 Kr"
+  },
+
+  {
+    "id": "4",
+    "name": "Australia",
+    "image": "/TravelImage/australia.png",
+    "price": "6000 Kr"
+  },
+
+  {
+    "id": "5",
+    "name": "Beasilien",
+    "image": "/TravelImage/beasilien.png",
+    "price": "4300 Kr"
+  },
+
+  {
+    "id": "6",
+    "name": "Belgien",
+    "image": "/TravelImage/belgien.png",
+    "price": "3400 Kr"
+  },
+
+  {
+    "id": "7",
+    "name": "Cypern",
+    "image": "/TravelImage/cypern.png",
+    "price": "10000 Kr"
+  },
+
+  {
+    "id": "8",
+    "name": "Danmark",
+    "image": "/TravelImage/danmark.png",
+    "price": "2000 Kr"
+  },
+
+  {
+    "id": "9",
+    "name": "Dubai",
+    "image": "/TravelImage/dubai.png",
+    "price": "8900 Kr"
+  },
+
+  {
+    "id": "10",
+    "name": "Egypten",
+    "image": "/TravelImage/egypten.png",
+    "price": "11500 Kr"
+  },
+
+  {
+    "id": "11",
+    "name": "England",
+    "image": "/TravelImage/england.png",
+    "price": "2000 Kr"
+  },
+
+  {
+    "id": "12",
+    "name": "Frankrike",
+    "image": "/TravelImage/frankrike.png",
+    "price": "4000 Kr"
+  },
+
+  {
+    "id": "13",
+    "name": "Grekland",
+    "image": "/TravelImage/grekland.png",
+    "price": "7650 Kr"
+  },
+
+  {
+    "id": "14",
+    "name": "Indien",
+    "image": "/TravelImage/indien.png",
+    "price": "5000 Kr"
+  },
+
+  {
+    "id": "15",
+    "name": "Irland",
+    "image": "/TravelImage/irland.png",
+    "price": "4300 Kr"
+  },
+
+  {
+    "id": "16",
+    "name": "Italien",
+    "image": "/TravelImage/italien.png",
+    "price": "3000 Kr"
+  },
+
+  {
+    "id": "17",
+    "name": "Jamaica",
+    "image": "/TravelImage/jamaica.png",
+    "price": "9000 Kr"
+  },
+
+  {
+    "id": "18",
+    "name": "Japan",
+    "image": "/TravelImage/japan.png",
+    "price": "15000 Kr"
+  },
+
+  {
+    "id": "19",
+    "name": "Jordan",
+    "image": "/TravelImage/jordan.png",
+    "price": "7600 Kr"
+  },
+
+  {
+    "id": "20",
+    "name": "Kenya",
+    "image": "/TravelImage/kenya.png",
+    "price": "8600 Kr"
+  },
+
+  {
+    "id": "21",
+    "name": "Kroatia",
+    "image": "/TravelImage/kroatia.png",
+    "price": "1500 Kr"
+  },
+
+  {
+    "id": "22",
+    "name": "Lebanon",
+    "image": "/TravelImage/lebanon.png",
+    "price": "4500 Kr"
+  },
+
+  {
+    "id": "23",
+    "name": "Lettland",
+    "image": "/TravelImage/lettland.png",
+    "price": "6430 Kr"
+  },
+
+  {
+    "id": "24",
+    "name": "London",
+    "image": "/TravelImage/london.png",
+    "price": "2000 Kr"
+  },
+
+  {
+    "id": "25",
+    "name": "Maldiverna",
+    "image": "/TravelImage/maldiverna.png",
+    "price": "20000 Kr"
+  },
+
+  {
+    "id": "26",
+    "name": "Malta",
+    "image": "/TravelImage/malta.png",
+    "price": "2100 Kr"
+  },
+
+  {
+    "id": "27",
+    "name": "Marocko",
+    "image": "/TravelImage/marocko.png",
+    "price": "9400 Kr"
+  },
+
+  {
+    "id": "28",
+    "name": "Mexico",
+    "image": "/TravelImage/mexico.png",
+    "price": "3300 Kr"
+  },
+
+  {
+    "id": "29",
+    "name": "Norge",
+    "image": "/TravelImage/norge.png",
+    "price": "1500 Kr"
+  },
+
+  {
+    "id": "30",
+    "name": "Oman",
+    "image": "/TravelImage/oman.png",
+    "price": "12000 Kr"
+  },
+
+  {
+    "id": "31",
+    "name": "Osterrike",
+    "image": "/TravelImage/osterrike.png",
+    "price": "3200 kr"
+  },
+
+  {
+    "id": "32",
+    "name": "Palastine",
+    "image": "/TravelImage/palastine.png",
+    "price": "9000 Kr"
+  },
+
+  {
+    "id": "33",
+    "name": "Polen",
+    "image": "/TravelImage/polen.png",
+    "price": "1700 Kr"
+  },
+
+  {
+    "id": "34",
+    "name": "Portugal",
+    "image": "/TravelImage/portugal.png",
+    "price": "3500 Kr"
+  },
+
+  {
+    "id": "35",
+    "name": "Qatar",
+    "image": "/TravelImage/qatar.png",
+    "price": "11000 Kr"
+  },
+
+  {
+    "id": "36",
+    "name": "Schwiz",
+    "image": "/TravelImage/schwiz.png",
+    "price": "4500 Kr"
+  },
+
+  {
+    "id": "37",
+    "name": "Spanien",
+    "image": "/TravelImage/spanien.png",
+    "price": "6700 Kr"
+  },
+
+  {
+    "id": "38",
+    "name": "Sverige",
+    "image": "/TravelImage/sverige.png",
+    "price": "3000 Kr"
+  },
+
+  {
+    "id": "39",
+    "name": "Sydafrika",
+    "image": "/TravelImage/sydafrika.png",
+    "price": "15000 Kr"
+  },
+
+  {
+    "id": "40",
+    "name": "Syria",
+    "image": "/TravelImage/syria.png",
+    "price": "6950 kr"
+  },
+
+  {
+    "id": "41",
+    "name": "Tanzania",
+    "image": "/TravelImage/tanzania.png",
+    "price": "5000 Kr"
+  },
+
+  {
+    "id": "42",
+    "name": "Thailand",
+    "image": "/TravelImage/thailand.png",
+    "price": "22300 Kr"
+  },
+
+  {
+    "id": "43",
+    "name": "Tunisien",
+    "image": "/TravelImage/tunisien.png",
+    "price": "7680"
+  },
+
+  {
+    "id": "44",
+    "name": "Turkiet",
+    "image": "/TravelImage/turkiet.png",
+    "price": "4300 Kr"
+  },
+
+  {
+    "id": "45",
+    "name": "Tyskland",
+    "image": "/TravelImage/tyskland.png",
+    "price": "2300 Kr"
+  },
+
+  {
+    "id": "46",
+    "name": "Ungern.png",
+    "image": "/TravelImage/ungern.png",
+    "price": "4000 Kr"
+  },
+
+  {
+    "id": "47",
+    "name": "USA",
+    "image": "/TravelImage/usa.png",
+    "price": "13000 Kr"
+  },
+
+  {
+    "id": "48",
+    "name": "Vitnames",
+    "image": "/TravelImage/vitnames.png",
+    "price": "6700 Kr"
+  },
+
+  {
+    "id": "49",
+    "name": "Kuwait",
+    "image": "/TravelImage/kuwait.png",
+    "price": "10000 Kr"
+  },
+
+  {
+    "id": "50",
+    "name": "Irak",
+    "image": "/TravelImage/irak.png",
+    "price": "12000 Kr"
+  },
+
+  {
+    "id": "51",
+    "name": "Amsterdam",
+    "image": "/TravelImage/amsterdam.png",
+    "price": "4360 Kr"
+  }
+]

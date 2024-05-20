@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+/* * {
+  padding: 0;
+  margin: 0;
+  /* box-sizing: border-box; */
+/* font-family: "Titillium Web", sans-serif; */
+/* }  */
+
+:root {
+  --mainColor: #070707;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #bb8c98;
+  --textColor: #f8f2f8;
+}
+
+.logo {
+  display: flex;
+  align-self: center;
+}
+
+.logo img {
+  width: 220px;
+  height: auto;
+  min-height: 90px;
+  margin-right: 10px;
+  background-color: transparent;
+  border: none;
+}
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 2rem;
+  font-size: 20px;
+  font-weight: bolder;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 900;
+
+  background-color: var(--mainColor);
+  color: var(--textColor);
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--secondaryColor);
+}
+
+.navbar-container .nav-btn {
+  padding: 1px;
+  /* padding: 5px; */
+  cursor: pointer;
+  background: #000;
+  border: none;
+  outline: none;
+  color: #f8f2f8;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  margin-right: -30px;
+  margin-top: -22px;
+}
+
+.navbar-container div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar-container .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    position: fixed;
+    top: 60px;
+    right: 60px;
+    z-index: 500;
+  }
+
+  .navbar-container nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+  }
+
+  .navbar-container .responsive_nav {
+    transform: translateY(100vh);
+    z-index: 1000;
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+/* Hover Effect for Navbar List Item */
+nav li:hover {
+  color: var(--secondaryColor); /* Ändra färgen när musen sveps över länken */
+}
+
+nav li:hover::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(
+    --secondaryColor
+  ); /* Skapa en linje under länken när musen sveps över */
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: width 0.4s ease; /* Lägg till en mjuk övergångseffekt */
+}
+
+:root {
+  --navLinkColor: var(--textColor);
+  --navLinkHoverColor: var(--secondaryColor);
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--navLinkColor);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: var(--navLinkHoverColor);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #f8f2f8;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
