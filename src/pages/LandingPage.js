@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Travel from "../Travel.json";
 import video from "../assets/images/video.mp4";
 import styled from "styled-components";
@@ -80,7 +80,7 @@ const StyledVideo = styled.video`
   background-color: rgba(0, 0, 0, 0.5);
 `;
 
-const Section = styled.section`
+const HomeSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -170,7 +170,33 @@ const Price = styled.h3`
   margin: 0;
 `;
 
+const Button = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+`;
 const LandingPage = () => {
+  const [destination, setDestination] = useState("");
+  const [InCheck, setInCheck] = useState("");
+  const [destinations, setDestinations] = useState([]);
+
+  useEffect(() => {
+    const specialDestinations = [...new Set(Travel.map((item) => item.name))];
+    setDestinations(specialDestinations);
+  }, []);
+
+  const FilterData = () => {
+    return Travel.filter(({ name }) => {
+      return (
+        (!destination ||
+          name.toLowerCase().includes(destination.toLowerCase())) &&
+        (!InCheck || new Date(InCheck))
+      );
+    });
+  };
+
+  const filteredDest = FilterData();
+
   return (
     <>
       <Container>
@@ -196,15 +222,42 @@ const LandingPage = () => {
         </StyledDescription>
       </Square>
 
-      <Section id="destination">
+      <HomeSection id="destination">
         <Info>
           <h2>
             Top <span>Destinations</span> In The World
           </h2>
         </Info>
 
+        <Section>
+          <div className="planner">
+            <form>
+              <div className="row">
+                <label>Destinations</label>
+                <select onChange={(e) => setDestination(e.target.value)}>
+                  <option value="">All Destinations</option>
+                  {destinations.map((destination) => (
+                    <option key={destination} value={destination}>
+                      {destination}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <div className="row">
+                <label>Check In</label>
+                <input
+                  type="date"
+                  onChange={(e) => setInCheck(e.target.value)}
+                />
+              </div>
+
+              <div className="row"></div>
+            </form>
+          </div>
+        </Section>
+
         <Destinations>
-          {Travel.map(({ name, image, price }) => {
+          {filteredDest.map(({ name, image, price }) => {
             return (
               <Destination key={name}>
                 <ImageContainer>
@@ -218,9 +271,87 @@ const LandingPage = () => {
             );
           })}
         </Destinations>
-      </Section>
+      </HomeSection>
     </>
   );
 };
 
 export default LandingPage;
+
+const Section = styled.section`
+  margin-top: 2rem;
+  position: relative;
+  .background {
+    img {
+      height: 90vh;
+      width: 100%;
+    }
+  }
+  .planner {
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    form {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 3rem;
+      .row {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        label {
+          font-size: 0.7rem;
+          color: var(--secondary-text);
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator {
+          cursor: pointer;
+          filter: invert(58%) sepia(69%) saturate(2588%) hue-rotate(325deg)
+            brightness(105%) contrast(101%);
+        }
+        input:focus {
+          outline: none;
+        }
+        input,
+        select {
+          border: none;
+          width: 100%;
+          color: var(--primary-color);
+          margin-top: 0.5rem;
+          background-color: white;
+          font-size: 1.1rem;
+          border-bottom: 1px solid #f5ebe9;
+          padding-bottom: 0.3rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
+    .background {
+      img {
+        height: 50vh;
+      }
+    }
+    .content {
+      .info {
+        margin-left: 2rem;
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+      }
+      .planner {
+        position: initial;
+        margin: 2rem;
+        form {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+`;

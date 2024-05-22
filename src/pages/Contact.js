@@ -12,7 +12,7 @@ const FormContainer = styled.div`
   border-radius: 8px;
 `;
 
-const Label = styled.label`
+const FormLabel = styled.label`
   display: block;
   margin-bottom: 8px;
   font-size: 25px;
@@ -225,7 +225,7 @@ function Contact() {
         </Styledrubrik>
 
         <form onSubmit={handleSubmit}>
-          <Label type="name">Name</Label>
+          <FormLabel type="name">Name</FormLabel>
 
           <Input
             required
@@ -235,7 +235,7 @@ function Contact() {
             value={formValues.username}
             onChange={handleChange}
           />
-          <Label type="email">Email</Label>
+          <FormLabel type="email">Email</FormLabel>
           <Input
             required
             type="email"
@@ -245,7 +245,7 @@ function Contact() {
             onChange={handleChange}
           />
           <p>{error.email}</p>
-          <Label type="text">Ask Your Question</Label>
+          <FormLabel type="text">Ask Your Question</FormLabel>
           <StyledTextArea
             required
             type="text"

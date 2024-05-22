@@ -5,7 +5,8 @@ import kairo from "../assets/images/kairo.png";
 import nilen from "../assets/images/nilen.png";
 import sfinxen from "../assets/images/sfinxen.png";
 import pyramid from "../assets/images/pyramid.mp4";
-const Square = styled.div`
+
+const EgyptenSquare = styled.div`
   background-color: #f8f2f8;
   color: #000;
   /* padding: 10px; */
@@ -285,7 +286,7 @@ const Egypten = () => {
   ];
   return (
     <>
-      <Square>
+      <EgyptenSquare>
         <StyledTitle1>
           <h1>Egypt, the world's best country</h1>
         </StyledTitle1>
@@ -299,7 +300,7 @@ const Egypten = () => {
             sand.
           </p>
         </StyledDescription>
-      </Square>
+      </EgyptenSquare>
 
       <TravelSection1 id="offer">
         <ImageContainer>

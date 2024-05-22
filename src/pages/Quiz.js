@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-import quiz from "../assets/images/quiz.mp4";
+import quiz2 from "../assets/images/quiz2.mp4";
 
 const Content = styled.div`
   position: absolute;
@@ -240,7 +240,7 @@ function Quiz() {
     <>
       <QuizContainer>
         <StyledVideo autoPlay loop muted>
-          <source src={quiz} type="video/mp4" />
+          <source src={quiz2} type="video/mp4" />
         </StyledVideo>
 
         <Content>

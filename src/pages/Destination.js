@@ -207,10 +207,11 @@ const Destination = () => {
             <Heading>Dubai</Heading>
 
             <StyledDesc>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              commodi rerum iure non hic voluptate, est ut, in odio ea odit quam
-              corporis architecto ipsa repudiandae? Beatae nostrum aspernatur
-              laudantium.
+              Dubai is an ultra-modern and exciting city with high standards,
+              beautiful beaches, and genuine hospitality. However, it is also a
+              large city with significant distances between the different
+              districts. The traffic can be quite extensive, which means that
+              getting around the city can take time.
               <Link to="/Dubai">Read More</Link>
             </StyledDesc>
           </LogoWrapper>

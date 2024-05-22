@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import "../styles/Navbar.css";
 
 function Navbar() {
-  const navRef = useRef();
+  const nav = useRef();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
@@ -26,7 +26,7 @@ function Navbar() {
           <img src="/logo/logo.png" alt="Logo" />
         </Link>
       </div>
-      <nav ref={navRef} className={isOpen ? "responsive_nav" : ""}>
+      <nav ref={nav} className={isOpen ? "responsive_nav" : ""}>
         <ul>
           {/* <li>
             <Link to="/om-oss" onClick={handleLinkClick}>
