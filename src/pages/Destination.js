@@ -219,10 +219,10 @@ const Destination = () => {
             <Logo src={grekland} alt="grekland" />
             <Heading>Grekland</Heading>
             <StyledDesc>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
-              nisi, molestias explicabo quod voluptates quas itaque dignissimos
-              cum officiis saepe expedita architecto. Harum recusandae quod
-              excepturi nulla maiores similique magnam!
+              Greece has the longest coastline on the Mediterranean Basin,
+              featuring thousands of islands. The country comprises nine
+              traditional geographic regions, and has a population of nearly
+              10.4 million. Athens is the nation's capital and largest city.
               <Link to="/Grekland">Read More</Link>
             </StyledDesc>
           </LogoWrapper>

@@ -268,9 +268,17 @@ function Contact() {
         </form>
       </FormContainer>
 
-      <TravelSection id="offer">
+      <TravelSection>
         <ImageContainer>
-          <img src={house} alt="house" />
+          <iframe
+            title="Karta"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4261.500157269461!2d11.942188712259416!3d57.72070287376666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff4a89bc11f1f%3A0x4cbb3b2fbfbc7f16!2zVsOlZ23DpHN0YXJlcGxhdHNlbg!5e0!3m2!1ssv!2sse!4v1716338838771!5m2!1ssv!2sse"
+            width="420"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </ImageContainer>
         <Content>
           <div className="title">
