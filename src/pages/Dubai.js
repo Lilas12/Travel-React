@@ -1,33 +1,94 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import styled from "styled-components";
-import dubai from "../assets/images/dubaihero.png";
-
+import dubai from "../assets/images/dubaih.png";
 import { DubaiData } from "../Data";
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-scroll";
 
-const Container = styled.div`
+const ImageOverlay = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
 `;
-const HeroImage = styled.div`
-  width: 100%;
-  height: auto;
-  position: relative;
 
-  @media (max-width: 768px) {
-    width: 100%;
-    height: auto;
+const ImageText = styled.div`
+  color: #fff;
+  font-size: 60px;
+  font-family: "Noto Sans Sora Sompeng";
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  margin-top: -400px;
+
+  @media (max-width: 1024px) {
+    font-size: 40px;
+    padding: 10px;
   }
 `;
-const StyledLanding = styled.img`
+
+const ButtonContainer = styled.div`
+  padding: 10px;
+  margin-top: 20px;
+`;
+
+const Button = styled.button`
+  background-color: #bb8c98;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Noto Sans Sora Sompeng";
+
+  transition: background-color 0.4s ease;
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  @media (max-width: 768px) {
+    padding: 6px 12px; /*  knappen för mobilskärm*/
+    font-size: 14px;
+  }
+
+  @media (min-width: 769px) {
+    padding: 12px 24px; /*  knappen för storskärm */
+    font-size: 18px;
+  }
+`;
+
+const breakpoints = {
+  mobile: "768px",
+};
+
+const media = {
+  mobile: `(max-width: ${breakpoints.mobile})`,
+};
+
+const MobileImage = styled.img`
   width: 100%;
-  /* height: 500px; */
+  margin-top: 200px;
+  filter: brightness(0.8);
+`;
+
+const Container = styled.div`
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  margin-top: -100px;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 `;
 
 const DubaiSquare = styled.div`
@@ -234,9 +295,38 @@ const Dubai = () => {
   return (
     <>
       <Container>
-        <HeroImage>
-          <StyledLanding src={dubai} alt="Background" />
-        </HeroImage>
+        <MobileImage src={dubai} alt="dubai" />
+        <ImageOverlay>
+          <ImageText>Find activities</ImageText>
+          <ButtonContainer>
+            <Button>
+              <Link
+                to="DubaiData"
+                spy={true}
+                smooth={true}
+                duration={500}
+                offset={200}
+              >
+                Find Activites
+              </Link>
+            </Button>
+          </ButtonContainer>
+        </ImageOverlay>
+        <div id="DubaiData"></div>
+
+        <style>
+          {`
+          @media ${media.mobile} {
+            ${MobileImage} {
+              display: block;
+            }
+          @media ${media.mobile} {
+            ${Button} a {
+            offset: 900;
+            }
+          }
+        `}
+        </style>
         <DubaiSquare>
           <StyledTitle1>
             <h1>Dubai 🇦🇪</h1>

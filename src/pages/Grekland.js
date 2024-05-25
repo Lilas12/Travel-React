@@ -7,7 +7,7 @@ import santorini from "../assets/images/santorini.png";
 import grece from "../assets/images/grece.mp4";
 
 const TravelSection1 = styled.section`
-  background-color: #070707;
+  background-color: #f8f2f8;
   display: flex;
   margin: 8px 0;
   gap: 5rem;
@@ -24,7 +24,7 @@ const TravelSection1 = styled.section`
 `;
 
 const TravelSection2 = styled.section`
-  background-color: #ede9ed;
+  background-color: #070707;
   display: flex;
   margin: 8px 0;
   gap: 5rem;
@@ -42,12 +42,12 @@ const TravelSection2 = styled.section`
 `;
 
 const TravelSection3 = styled.section`
-  background-color: #070707;
+  background-color: #f8f2f8;
   display: flex;
   margin: 8px 0;
   gap: 5rem;
   margin-top: -10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   padding: 2rem;
 
@@ -60,7 +60,7 @@ const TravelSection3 = styled.section`
 
 const ImageContainer = styled.div`
   img {
-    height: 30rem;
+    height: 28rem;
 
     @media screen and (min-width: 270px) and (max-width: 1070px) {
       max-inline-size: 100%;
@@ -71,7 +71,7 @@ const ImageContainer = styled.div`
 
 const ImageContainer2 = styled.div`
   img {
-    height: 30rem;
+    height: 28rem;
 
     @media screen and (min-width: 270px) and (max-width: 1070px) {
       max-inline-size: 100%;
@@ -82,7 +82,7 @@ const ImageContainer2 = styled.div`
 
 const ImageContainer3 = styled.div`
   img {
-    height: 30rem;
+    height: 26rem;
 
     @media screen and (min-width: 270px) and (max-width: 1070px) {
       max-inline-size: 100%;
@@ -94,7 +94,7 @@ const ImageContainer3 = styled.div`
 const Content1 = styled.div`
   .title1 {
     margin: 2px;
-    color: #fff;
+    color: #1f2041;
 
     h1 {
       font-size: 40px;
@@ -112,7 +112,7 @@ const Content1 = styled.div`
 const Content2 = styled.div`
   .title2 {
     margin: 2px;
-    color: #1f2041;
+    color: #fff;
 
     h1 {
       font-size: 40px;
@@ -130,7 +130,7 @@ const Content2 = styled.div`
 const Content3 = styled.div`
   .title3 {
     margin: 2px;
-    color: #fff;
+    color: #1f2041;
 
     h1 {
       font-size: 40px;
@@ -164,7 +164,7 @@ const ListItem = styled.li`
 const Text1 = styled.div`
   h3 {
     font-size: 1.5rem;
-    color: #fff;
+    color: #000;
     font-family: "Inter";
 
     @media screen and (min-width: 270px) and (max-width: 1070px) {
@@ -177,6 +177,7 @@ const Text2 = styled.div`
   h3 {
     font-size: 1.5rem;
     font-family: "Inter";
+    color: #fff;
 
     @media screen and (min-width: 270px) and (max-width: 1070px) {
       font-size: 1rem;
@@ -187,7 +188,7 @@ const Text2 = styled.div`
 const Text3 = styled.div`
   h3 {
     font-size: 1.5rem;
-    color: #fff;
+    color: #000;
     font-family: "Inter";
 
     @media screen and (min-width: 270px) and (max-width: 1070px) {

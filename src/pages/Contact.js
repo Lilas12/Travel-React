@@ -3,7 +3,6 @@ import styled from "styled-components";
 import emailjs from "@emailjs/browser";
 import kontakt from "../assets/images/kontakt.png";
 import { BsHeadphones, BsPerson } from "react-icons/bs";
-import house from "../assets/images/lighthouse.png";
 
 const FormContainer = styled.div`
   max-width: 500px;
@@ -129,16 +128,104 @@ const Button = styled.button`
   }
 `;
 
+const TravelSection = styled.section`
+  background-color: #ede9ed;
+  display: flex;
+  margin: 8px 0;
+  gap: 5rem;
+  margin-bottom: -10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  @media screen and (min-width: 270px) and (max-width: 1070px) {
+    flex-direction: column;
+    margin: 5rem 1rem;
+    gap: 2rem;
+  }
+`;
+
+const ImageContainer = styled.div`
+  img {
+    height: 39rem;
+
+    @media screen and (min-width: 270px) and (max-width: 1070px) {
+      max-inline-size: 100%;
+      block-size: auto;
+    }
+  }
+`;
+
+const Content = styled.div`
+  .title {
+    margin: 2px;
+
+    h1 {
+      font-size: 40px;
+
+      @media screen and (min-width: 270px) and (max-width: 1070px) {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+  }
+`;
+
+const List = styled.ul`
+  list-style-type: none;
+`;
+
+const ListItem = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 4rem 0;
+
+  @media screen and (min-width: 270px) and (max-width: 1070px) {
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+`;
+
+const Icon = styled.div`
+  padding: 0.8rem;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+
+  &.pink {
+    background-color: #bb8c98;
+    color: #000;
+  }
+
+  &.rosa {
+    background-color: #bb8c98;
+    color: #fff;
+  }
+`;
+
+const Text = styled.div`
+  h3 {
+    font-size: 1.5rem;
+
+    @media screen and (min-width: 270px) and (max-width: 1070px) {
+      font-size: 1.5rem;
+    }
+  }
+`;
+
 function Contact() {
   const data = [
     {
-      description: "Best Travel Guide Always for your Services",
+      description: "Best Travel Guide for your Services",
       icon: <BsPerson />,
       color: "pink",
     },
 
     {
-      description: "24/7 Strong Customer Support",
+      description: "24/7 Customer Support",
       icon: <BsHeadphones />,
       color: "rosa",
     },
@@ -193,15 +280,15 @@ function Contact() {
     const formErrors = {};
 
     if (!values.username) {
-      formErrors.username = "Please fill out this field";
+      formErrors.username = "Please fil this field";
     }
 
     if (!values.email) {
-      formErrors.email = "Please fill out this field";
+      formErrors.email = "Please fill this field";
     }
 
     if (!values.message) {
-      formErrors.message = "Please fill out this field";
+      formErrors.message = "Please fill this field";
     }
 
     return formErrors;
@@ -301,91 +388,3 @@ function Contact() {
 }
 
 export default Contact;
-
-const TravelSection = styled.section`
-  background-color: #ede9ed;
-  display: flex;
-  margin: 8px 0;
-  gap: 5rem;
-  margin-bottom: -10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-  padding: 2rem;
-  border-radius: 1rem;
-
-  @media screen and (min-width: 270px) and (max-width: 1070px) {
-    flex-direction: column;
-    margin: 5rem 1rem;
-    gap: 2rem;
-  }
-`;
-
-const ImageContainer = styled.div`
-  img {
-    height: 39rem;
-
-    @media screen and (min-width: 270px) and (max-width: 1070px) {
-      max-inline-size: 100%;
-      block-size: auto;
-    }
-  }
-`;
-
-const Content = styled.div`
-  .title {
-    margin: 2px;
-
-    h1 {
-      font-size: 40px;
-
-      @media screen and (min-width: 270px) and (max-width: 1070px) {
-        font-size: 2rem;
-        text-align: center;
-      }
-    }
-  }
-`;
-
-const List = styled.ul`
-  list-style-type: none;
-`;
-
-const ListItem = styled.li`
-  display: flex;
-  align-items: center;
-  gap: 4rem;
-  margin: 4rem 0;
-
-  @media screen and (min-width: 270px) and (max-width: 1070px) {
-    gap: 1rem;
-    margin: 2rem 0;
-  }
-`;
-
-const Icon = styled.div`
-  padding: 0.9rem;
-  border-radius: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-
-  &.pink {
-    background-color: #bb8c98;
-    color: #000;
-  }
-
-  &.rosa {
-    background-color: #bb8c98;
-    color: #fff;
-  }
-`;
-
-const Text = styled.div`
-  h3 {
-    font-size: 2rem;
-
-    @media screen and (min-width: 270px) and (max-width: 1070px) {
-      font-size: 2rem;
-    }
-  }
-`;

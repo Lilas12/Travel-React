@@ -51,8 +51,8 @@ const TravelSection1 = styled.section`
   display: flex;
   margin: 8px 0;
   gap: 5rem;
-  margin-top: -10px;
-  margin-bottom: 10px;
+  margin-top: -20px;
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   padding: 2rem;
 
@@ -60,6 +60,7 @@ const TravelSection1 = styled.section`
     flex-direction: column;
     margin: 5rem 1rem;
     gap: 2rem;
+    margin-top: -20px;
   }
 `;
 
@@ -87,7 +88,7 @@ const TravelSection3 = styled.section`
   margin: 8px 0;
   gap: 5rem;
   margin-top: -10px;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   padding: 2rem;
 
@@ -111,7 +112,8 @@ const ImageContainer = styled.div`
 
 const ImageContainer2 = styled.div`
   img {
-    height: 30rem;
+    height: 28rem;
+    margin-top: 90px;
 
     @media screen and (min-width: 270px) and (max-width: 1070px) {
       max-inline-size: 100%;
@@ -215,11 +217,11 @@ const Text1 = styled.div`
 
 const Text2 = styled.div`
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-family: "Inter";
 
     @media screen and (min-width: 270px) and (max-width: 1070px) {
-      font-size: 1rem;
+      font-size: 1.4rem;
     }
   }
 `;
@@ -286,6 +288,14 @@ const Egypten = () => {
   ];
   return (
     <>
+      <Container>
+        <VideoWrapper>
+          <StyledVideo autoPlay loop muted>
+            <source src={pyramid} type="video/mp4" />
+          </StyledVideo>
+        </VideoWrapper>
+      </Container>
+
       <EgyptenSquare>
         <StyledTitle1>
           <h1>Egypt, the world's best country</h1>
@@ -361,14 +371,6 @@ const Egypten = () => {
           </List>
         </Content3>
       </TravelSection3>
-
-      <Container>
-        <VideoWrapper>
-          <StyledVideo autoPlay loop muted>
-            <source src={pyramid} type="video/mp4" />
-          </StyledVideo>
-        </VideoWrapper>
-      </Container>
     </>
   );
 };

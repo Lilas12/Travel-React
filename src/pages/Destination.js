@@ -1,12 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-
 import egypten from "../assets/images/egypten.png";
 import dubai from "../assets/images/dubai.png";
-import italien from "../assets/images/italien.png";
 import grekland from "../assets/images/grekland.png";
-import spanien from "../assets/images/spanien.png";
 import turkiet from "../assets/images/turkiet.png";
 
 const Square = styled.div`
@@ -123,11 +120,11 @@ const LogoWrapper = styled.div`
   text-align: center;
   margin-bottom: 60px;
   background-color: #070707;
-  width: 20%;
+  width: 30%;
   padding: 10px;
   border-radius: 20px;
   height: auto;
-  min-height: 500px;
+  min-height: 570px;
   border: 6px solid #bb8c98;
 
   transition:
@@ -215,6 +212,9 @@ const Destination = () => {
               <Link to="/Dubai">Read More</Link>
             </StyledDesc>
           </LogoWrapper>
+        </LogosContainer>
+
+        <LogosContainer>
           <LogoWrapper>
             <Logo src={grekland} alt="grekland" />
             <Heading>Grekland</Heading>
@@ -226,41 +226,16 @@ const Destination = () => {
               <Link to="/Grekland">Read More</Link>
             </StyledDesc>
           </LogoWrapper>
-        </LogosContainer>
 
-        <LogosContainer>
-          <LogoWrapper>
-            <Logo src={italien} alt="italien" />
-            <Heading>Italien</Heading>
-            <StyledDesc>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-              maxime in cupiditate temporibus animi, doloribus deleniti ea quis
-              laboriosam vitae, molestias enim error minima veritatis. Quisquam
-              qui officiis nesciunt magni.
-              <Link to="/Italien">Read More</Link>
-            </StyledDesc>
-          </LogoWrapper>
-
-          <LogoWrapper>
-            <Logo src={spanien} alt="spanien" />
-            <Heading>Spanien</Heading>
-            <StyledDesc>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
-              nisi, molestias explicabo quod voluptates quas itaque dignissimos
-              cum officiis saepe expedita architecto. Harum recusandae quod
-              excepturi nulla maiores similique magnam!
-              <Link to="/Spanien">Read More</Link>
-            </StyledDesc>
-          </LogoWrapper>
           <LogoWrapper>
             <Logo src={turkiet} alt="turkiet" />
             <Heading>Turkiet</Heading>
 
             <StyledDesc>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
-              nisi, molestias explicabo quod voluptates quas itaque dignissimos
-              cum officiis saepe expedita architecto. Harum recusandae quod
-              excepturi nulla maiores similique magnam!
+              Turkey truly has something for everyone. Turkey is, of course,
+              best known for its sun and beach holidays but it also offers great
+              golf courses, interesting excursions, numerous attractions, and,
+              not least, a vibrant nightlife
               <Link to="/Turkiet">Read More</Link>
             </StyledDesc>
           </LogoWrapper>

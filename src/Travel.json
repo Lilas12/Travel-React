@@ -3,359 +3,407 @@
     "id": "1",
     "name": "Albania",
     "image": "/TravelImage/albania.png",
-
-    "price": "3500 Kr"
+    "price": "3500 Kr",
+    "description": "Welcome to Albania a country that is relatively new on the Scandinavian holiday map but is predicted to have an exciting future as a new destination comparable to its neighbors around the Mediterranean. Albania boasts dramatic landscapes, beautiful beaches, and excellent hotels in a wide range of prices. As if that wasn't enough, you can also experience a lot of exciting culture and delightful culinary traditions, of which the Albanians are very proud."
   },
 
   {
     "id": "2",
     "name": "Förenade Arabemiraten",
-
     "image": "/TravelImage/arabemiraten.png",
-
-    "price": "9500 Kr"
+    "price": "9500 Kr",
+    "description": "The United Arab Emirates has developed rapidly in recent decades and today has a very high standard of living. The country has gained international attention for its spectacular buildings, such as the Burj Khalifa, the world's tallest building, located in Dubai."
   },
 
   {
     "id": "3",
     "name": "Aruba",
     "image": "/TravelImage/aruba.png",
-    "price": "5000 Kr"
+    "price": "5000 Kr",
+    "description": "Aruba is a well-developed tourist destination with functioning and good infrastructure, high standards, and friendly people. There is no poverty here, and you can safely travel around the island. The quality of food and drink is good, and you can also drink water directly from the tap. It is also a great destination for families as the island is very child-friendly."
   },
 
   {
     "id": "4",
     "name": "Australia",
     "image": "/TravelImage/australia.png",
-    "price": "6000 Kr"
+    "price": "6000 Kr",
+    "description": "Australia is the country and continent 'Down Under' where the distances are enormous. An unforgettable experience is the 'Bridge Climb' on Harbour Bridge, the largest bridge in Sydney, highly recommended for those who are not afraid of heights. Sydney is built on several different islands, each with its own unique character. An easy and somewhat different way to get around the city between the various attractions is by Monorail/Skytrain; trains and buses also work excellently"
   },
 
   {
     "id": "5",
     "name": "Beasilien",
     "image": "/TravelImage/beasilien.png",
-    "price": "4300 Kr"
+    "price": "4300 Kr",
+    "description": "Long beaches, the Amazon, the carnival in Rio, samba, and the national sport of football are some of the things associated with the country of Brazil.The beaches are wide with fine sand, and Brazilians themselves spend countless hours on the beach; it is where they live and socialize.There are many different excursions to choose from, including various tours that can be booked from home or on-site."
   },
 
   {
     "id": "6",
     "name": "Belgien",
     "image": "/TravelImage/belgien.png",
-    "price": "3400 Kr"
+    "price": "3400 Kr",
+    "description": ""
   },
 
   {
     "id": "7",
     "name": "Cypern",
     "image": "/TravelImage/cypern.png",
-    "price": "10000 Kr"
+    "price": "10000 Kr",
+    "description": "The Kingdom of Belgium is a small country but has much to offer. Belgium was one of the first countries in the EU. In Belgium, you will find vibrant big cities, charming small towns, perhaps the best beer in the world, and some truly fantastic seaside resorts along the coast."
   },
 
   {
     "id": "8",
     "name": "Danmark",
     "image": "/TravelImage/danmark.png",
-    "price": "2000 Kr"
+    "price": "2000 Kr",
+    "description": "Denmark is relatively small but delightful and welcoming. The country consists of a total of 405 islands. The largest and most visited islands are Zealand, Lolland, Funen, Bornholm, and Jutland, which is actually a peninsula. Denmark's second-largest city, Aarhus, is located in East Jutland and is surrounded by beautiful nature and long, fine beaches."
   },
 
   {
     "id": "9",
     "name": "Dubai",
     "image": "/TravelImage/dubai.png",
-    "price": "8900 Kr"
+    "price": "8900 Kr",
+    "description": "Dubai is an ultramodern and exciting city with high standards, beautiful beaches, and genuine hospitality. However, it is also a large city with considerable distances between different districts. Traffic can be quite extensive, which means it can take time to get around the city."
   },
 
   {
     "id": "10",
     "name": "Egypten",
     "image": "/TravelImage/egypten.png",
-    "price": "11500 Kr"
+    "price": "11500 Kr",
+    "description": "Egypt is one of history's most renowned and written-about cultures. Everyone from children's book authors to Hollywood producers has been fascinated by pharaohs, pyramids, tombs, and mummies."
   },
 
   {
     "id": "11",
     "name": "England",
     "image": "/TravelImage/england.png",
-    "price": "2000 Kr"
+    "price": "2000 Kr",
+    "description": "In the northern part of England, including the beautiful Yorkshire, with the charming city of York characterized by old bridges and alleys, numerous small cafes serving afternoon tea with warm scones and jam. In the heart of England lies Warwickshire and Stratford-upon-Avon, Shakespeare's birthplace. Here you will find the beautiful Warwick Castle and its lush gardens. Not far from the world metropolis London lies the famous university city of Oxford."
   },
 
   {
     "id": "12",
     "name": "Frankrike",
     "image": "/TravelImage/frankrike.png",
-    "price": "4000 Kr"
+    "price": "4000 Kr",
+    "description": "France is a large, beautiful, exciting, and diverse country in many areas. Interesting history, fascinating food and wine culture, fantastic places, and sights. There is something for everyone to discover and be fascinated by. If you want city life, then Paris is fantastic with shopping, cafes, theaters, and markets. If you wish for sun and sea, the French Riviera is a given option with Nice and Cannes, with plenty of luxury boats and beautiful people who are happy to show off."
   },
 
   {
     "id": "13",
     "name": "Grekland",
     "image": "/TravelImage/grekland.png",
-    "price": "7650 Kr"
+    "price": "7650 Kr",
+    "description": "Greece has more than 2,500 islands, of which 227 are inhabited. The country has a typical Mediterranean climate with mild and rainy winters and relatively warm and dry summers. The Mediterranean region is highly prone to wildfires, and Greece is no exception."
   },
 
   {
     "id": "14",
     "name": "Indien",
     "image": "/TravelImage/indien.png",
-    "price": "5000 Kr"
+    "price": "5000 Kr",
+    "description": "India is the largest country in the Indian subcontinent and the world's second most populous country after China. It is a highly diverse country, both geographically and culturally. The country has high snow-capped mountains, dense jungles, scorching deserts, and tropical beaches."
   },
 
   {
     "id": "15",
     "name": "Irland",
     "image": "/TravelImage/irland.png",
-    "price": "4300 Kr"
+    "price": "4300 Kr",
+    "description": "In Ireland, you are greeted by a beautiful rolling green landscape and friendly people. The scenery is magnificent, and on the west coast, it is also very dramatic with steep cliffs plunging into the Atlantic. Ireland's interesting and exciting history has fascinated many, and several famous writers come from here, including James Joyce, Oscar Wilde, and Jonathan Swift."
   },
 
   {
     "id": "16",
     "name": "Italien",
     "image": "/TravelImage/italien.png",
-    "price": "3000 Kr"
+    "price": "3000 Kr",
+    "description": ""
   },
 
   {
     "id": "17",
     "name": "Jamaica",
     "image": "/TravelImage/jamaica.png",
-    "price": "9000 Kr"
+    "price": "9000 Kr",
+    "description": "Jamaica in the Caribbean is strongly associated with reggae music and the Rastafarian movement. Both the music and the religion have been significant for the identity of Jamaicans and for tourism on the island. Welfare systems are well-developed, but social problems are still significant, including poverty, drug abuse, and high levels of violent crime."
   },
 
   {
     "id": "18",
     "name": "Japan",
     "image": "/TravelImage/japan.png",
-    "price": "15000 Kr"
+    "price": "15000 Kr",
+    "description": "Japan är ett land som för många av oss förknippas med karaoke, körsbärsblomning och samurajer. Faktum är att få länder i världen skapar så många och kontrastfulla associationer som just Japan."
   },
 
   {
     "id": "19",
     "name": "Jordan",
     "image": "/TravelImage/jordan.png",
-    "price": "7600 Kr"
+    "price": "7600 Kr",
+    "description": "Jordan is the only country in the world that has a mountain as its king. Jordanians have recognized a mountain called Jebel Al-Madhbah, also known as Mount Nebo, as their king. The reason for this is the biblical story of Moses ascending the mountain and seeing the Promised Land."
   },
 
   {
     "id": "20",
     "name": "Kenya",
     "image": "/TravelImage/kenya.png",
-    "price": "8600 Kr"
+    "price": "8600 Kr",
+    "description": "Kenyans are hospitable and curious. This, combined with unbeatable safari opportunities, miles of beaches, and a fantastic culture, defends the country's title as 'Africa's jewel'. In addition to the country's colorful culture, Kenya also has exciting markets, exotic food, and great shopping. Handicrafts of wood, baskets, sarongs, and music are exciting items to buy and take home."
   },
 
   {
     "id": "21",
     "name": "Kroatia",
     "image": "/TravelImage/kroatia.png",
-    "price": "1500 Kr"
+    "price": "1500 Kr",
+    "description": "Croatia's resorts are both simple and exclusive at the same time. Here, you'll find small harbors where luxury yachts sit side by side with simple, local fishing boats. There's city life and tourist life. Croatia is both sophisticated, laid-back, and very charming at the same time."
   },
 
   {
     "id": "22",
     "name": "Lebanon",
     "image": "/TravelImage/lebanon.png",
-    "price": "4500 Kr"
+    "price": "4500 Kr",
+    "description": "Lebanon is a small and beautiful country on the eastern shores of the Mediterranean Sea. It is located at the crossroads of three continents and has therefore been the meeting point for many civilizations, the traces of which can still be seen today."
   },
 
   {
     "id": "23",
     "name": "Lettland",
     "image": "/TravelImage/lettland.png",
-    "price": "6430 Kr"
+    "price": "6430 Kr",
+    "description": "The city is acclaimed for its Art Nouveau architecture and is listed as a UNESCO World Heritage site, having been designated as the European Capital of Culture in 2014. Latvia is a member of many international organizations, including the United Nations, the World Bank, the Council of Europe, and the World Trade Organization."
   },
 
   {
     "id": "24",
     "name": "London",
     "image": "/TravelImage/london.png",
-    "price": "2000 Kr"
+    "price": "2000 Kr",
+    "description": "The major business districts are around Piccadilly Circus, and streets like Oxford Street and Bond Street are famous among many tourists. Apart from being a major financial center, London is also a significant industrial city. Many multinational companies have a significant presence in the city."
   },
 
   {
     "id": "25",
     "name": "Maldiverna",
     "image": "/TravelImage/maldiverna.png",
-    "price": "20000 Kr"
+    "price": "20000 Kr",
+    "description": "If you travel to the Maldives, it's helpful to have an interest in diving, sailing, or other water sports activities, as most of the activities take place in the wet element. The Maldives is perfect for couples of all ages and is known for its beautiful resorts, making it an ideal destination for honeymooners."
   },
 
   {
     "id": "26",
     "name": "Malta",
     "image": "/TravelImage/malta.png",
-    "price": "2100 Kr"
+    "price": "2100 Kr",
+    "description": "The charming little island of Malta is located in the middle of the Mediterranean and can attract with fantastic weather, lovely beaches, great food, and a variety of activities. Thanks to the short distances, it's easy to see and experience a lot in a short time here - whether you're traveling alone, with friends, or with family."
   },
 
   {
     "id": "27",
     "name": "Marocko",
     "image": "/TravelImage/marocko.png",
-    "price": "9400 Kr"
+    "price": "9400 Kr",
+    "description": "Morocco is located in the northwest corner of Africa and the country is a delightful mixture of high mountains, long soft beaches, deserts, bazaars, an interesting oriental culture, and exciting experiences. Norwegian flies to the resorts of Agadir and exotic Marrakech. Morocco is a safe sun destination and has a pleasant climate even during our winter months."
   },
 
   {
     "id": "28",
     "name": "Mexico",
     "image": "/TravelImage/mexico.png",
-    "price": "3300 Kr"
+    "price": "3300 Kr",
+    "description": "The country has world-famous cuisine, which is so much more than just tacos and fajitas. You can enjoy new and exciting dishes every day, and cooking classes are a popular activity for visitors."
   },
 
   {
     "id": "29",
     "name": "Norge",
     "image": "/TravelImage/norge.png",
-    "price": "1500 Kr"
+    "price": "1500 Kr",
+    "description": "Norway is Europe's northernmost country with a scenic landscape of fjords and mountains. The old fishing and seafaring nation has, with its abundant resources of oil and natural gas, developed into one of the world's wealthiest countries."
   },
 
   {
     "id": "30",
     "name": "Oman",
     "image": "/TravelImage/oman.png",
-    "price": "12000 Kr"
+    "price": "12000 Kr",
+    "description": "Oman is a kingdom where the ruler holds the title of sultan and wields almost absolute power. Since Haitham bin Tariq became the regent in 2020, measures aimed at strengthening the state's economy have been announced. Citizens are allowed to elect members to an advisory assembly, but political parties are prohibited."
   },
 
   {
     "id": "31",
     "name": "Osterrike",
     "image": "/TravelImage/osterrike.png",
-    "price": "3200 kr"
+    "price": "3200 kr",
+    "description": "Beautifully situated in the Alps, nestled in magnificent nature. It's easy to get to the Alps by plane, train, or car, and accommodation is available in hotels or family-run guesthouses. The classification of hotels and guesthouses maintains a high level of quality, which is regularly checked."
   },
 
   {
     "id": "32",
     "name": "Palastine",
     "image": "/TravelImage/palastine.png",
-    "price": "9000 Kr"
+    "price": "9000 Kr",
+    "description": "The Palestinian tourist area offers a unique blend of rich cultural heritage, historical significance, and breathtaking natural landscapes. Visitors can explore ancient cities like Bethlehem and Jericho, which are steeped in history and offer insights into the region's diverse past. The vibrant markets, traditional cuisine, and warm hospitality of the Palestinian people add to the charm of the experience. Additionally, the stunning landscapes of the West Bank, including the lush hills of Nablus and the picturesque shores of the Dead Sea, provide opportunities for outdoor adventures such as hiking, camping, and swimming. Despite the challenges, Palestine remains a destination of great cultural and historical significance, offering visitors a truly unforgettable experience."
   },
 
   {
     "id": "33",
     "name": "Polen",
     "image": "/TravelImage/polen.png",
-    "price": "1700 Kr"
+    "price": "1700 Kr",
+    "description": "Poland is one of our closest neighboring countries, yet for many, it remains undiscovered. When traveling to Poland, there is much to see and do, ranging from culture and shopping to skiing and equestrian sports."
   },
 
   {
     "id": "34",
     "name": "Portugal",
     "image": "/TravelImage/portugal.png",
-    "price": "3500 Kr"
+    "price": "3500 Kr",
+    "description": "Portugal is a country of great diversity. The capital, Lisbon, is often considered one of the most beautiful cities in Europe, while to the south lies the Algarve coast with its miles of golden beaches and dramatic cliffs. The beaches and cliffs continue along Portugal's Atlantic coast to the north, all the way up to the country's second-largest and equally beautiful city, Porto."
   },
 
   {
     "id": "35",
     "name": "Qatar",
     "image": "/TravelImage/qatar.png",
-    "price": "11000 Kr"
+    "price": "11000 Kr",
+    "description": "After Qatar was selected as the host for the 2022 FIFA World Cup, the country has experienced a tremendous increase in tourism. Qatar Airways now operates daily flights from most major European airports, and tourism authorities have invested significant sums in advertising campaigns."
   },
 
   {
     "id": "36",
     "name": "Schwiz",
     "image": "/TravelImage/schwiz.png",
-    "price": "4500 Kr"
+    "price": "4500 Kr",
+    "description": "Switzerland is a federal state in Central Europe, and much of the Alps are located within its borders. The country is one of the wealthiest in the world and shares borders with Germany, France, Italy, Austria, and Liechtenstein.Switzerland is known as a multicultural society. Its residents speak German, French, and Italian"
   },
 
   {
     "id": "37",
     "name": "Spanien",
     "image": "/TravelImage/spanien.png",
-    "price": "6700 Kr"
+    "price": "6700 Kr",
+    "description": "Spain is the most popular holiday destination for us Swedes. It's no big surprise, as the country attracts people of all ages and with very different interests, and it's also a popular destination all year round."
   },
 
   {
     "id": "38",
     "name": "Sverige",
     "image": "/TravelImage/sverige.png",
-    "price": "3000 Kr"
+    "price": "3000 Kr",
+    "description": "Sweden is one of Europe's larger countries in terms of area and consists mostly of forests, mountains, and lakes. Forests, hydropower, and iron ore laid the foundation for prosperity, which has grown with high-tech and biochemistry industries. During the second half of the 20th century, an advanced welfare system was developed."
   },
 
   {
     "id": "39",
     "name": "Sydafrika",
     "image": "/TravelImage/sydafrika.png",
-    "price": "15000 Kr"
+    "price": "15000 Kr",
+    "description": "As one of the most culturally and geographically diverse places on earth, there is a wide range of attractions, activities, and nature experiences in South Africa. South Africa is vast, and the impressions are many. It's impossible to experience everything in a single visit, which is a good reason to return because each visit offers something new."
   },
 
   {
     "id": "40",
     "name": "Syria",
     "image": "/TravelImage/syria.png",
-    "price": "6950 kr"
+    "price": "6950 kr",
+    "description": "In Syria, visitors can explore ancient ruins like Palmyra and Bosra, stroll through the historic streets of Damascus, and marvel at the cultural heritage of Aleppo. They can also enjoy traditional Syrian cuisine and relax on the Mediterranean coast in cities like Latakia and Tartous. However, travelers should be aware of the current security situation and travel advisories before planning a trip to Syria."
   },
 
   {
     "id": "41",
     "name": "Tanzania",
     "image": "/TravelImage/tanzania.png",
-    "price": "5000 Kr"
+    "price": "5000 Kr",
+    "description": "Tanzania is the largest country in East Africa, bordered by eight countries on the African continent. It boasts a rich and ancient history, with the Olduvai Gorge in Tanzania yielding remnants of our earliest human ancestors."
   },
 
   {
     "id": "42",
     "name": "Thailand",
     "image": "/TravelImage/thailand.png",
-    "price": "22300 Kr"
+    "price": "22300 Kr",
+    "description": "In Thailand, you can enjoy beaches, cultural sites, adventure activities, island hopping, Thai cuisine, shopping, massages, and cultural shows."
   },
 
   {
     "id": "43",
     "name": "Tunisien",
     "image": "/TravelImage/tunisien.png",
-    "price": "7680"
+    "price": "7680",
+    "description": "In the northern part of Africa lies Tunisia, known for its miles of pristine white sand beaches and a delightful exotic blend of the Western and Eastern cultures. Tunisia is an affordable destination where your money can go a long way, making it relatively inexpensive to live here."
   },
 
   {
     "id": "44",
     "name": "Turkiet",
     "image": "/TravelImage/turkiet.png",
-    "price": "4300 Kr"
+    "price": "4300 Kr",
+    "description": "Turkey truly has something for everyone. Most notably, it's renowned for sunny beach holidays, but it also boasts excellent golf courses, intriguing excursion destinations, numerous attractions, and, not least, vibrant nightlife."
   },
 
   {
     "id": "45",
     "name": "Tyskland",
     "image": "/TravelImage/tyskland.png",
-    "price": "2300 Kr"
+    "price": "2300 Kr",
+    "description": "Germany offers a diverse range of activities for visitors. From exploring historic cities like Berlin and Munich to enjoying outdoor adventures in the Black Forest or Bavarian Alps. You can also indulge in the country's rich culture, including its famous beer festivals and culinary delights."
   },
 
   {
     "id": "46",
-    "name": "Ungern.png",
+    "name": "Hungary",
     "image": "/TravelImage/ungern.png",
-    "price": "4000 Kr"
+    "price": "4000 Kr",
+    "description": "Hungary is an intriguing destination in Europe, with Budapest as its captivating capital. It's a paradise for art, culture, architectural marvels, and rich history enthusiasts."
   },
 
   {
     "id": "47",
     "name": "USA",
     "image": "/TravelImage/usa.png",
-    "price": "13000 Kr"
+    "price": "13000 Kr",
+    "description": "In the USA, you can explore diverse landscapes, vibrant cities, iconic landmarks, and cultural attractions. From enjoying the natural beauty of national parks to experiencing the bustling energy of cities like New York and Los Angeles, there's something for everyone. Other popular activities include visiting historical sites, attending music and cultural festivals, indulging in diverse cuisine, shopping, and enjoying outdoor adventures like hiking, skiing, and surfing."
   },
 
   {
     "id": "48",
     "name": "Vitnames",
     "image": "/TravelImage/vitnames.png",
-    "price": "6700 Kr"
+    "price": "6700 Kr",
+    "description": "I Vietnam kan man utforska historiska platser som Hanoi och Ho Chi Minh City, beundra naturliga underverk som Halong Bay och Mekong Delta, njuta av den lokala matkulturen med pho och banh mi, upptäcka traditionella hantverk och marknader, samt koppla av på pittoreska stränder som Da Nang och Nha Trang."
   },
 
   {
     "id": "49",
     "name": "Kuwait",
     "image": "/TravelImage/kuwait.png",
-    "price": "10000 Kr"
+    "price": "10000 Kr",
+    "description": "I Kuwait kan man besöka historiska platser som Kuwait City's souk och Kuwait Towers, utforska modern arkitektur och shoppingcentra, njuta av traditionell mat som machboos och harees, samt koppla av på stränder längs Persiska viken."
   },
 
   {
     "id": "50",
     "name": "Irak",
     "image": "/TravelImage/irak.png",
-    "price": "12000 Kr"
+    "price": "12000 Kr",
+    "description": "I Irak kan man besöka historiska platser som Babylon, utforska kulturella sevärdheter som Bagdads gamla stad och Mosul, uppleva det lokala köket med traditionella rätter som kebab och dolma, samt njuta av naturen längs floden Tigris och i Zagrosbergen."
   },
 
   {
     "id": "51",
     "name": "Amsterdam",
     "image": "/TravelImage/amsterdam.png",
-    "price": "4360 Kr"
+    "price": "4360 Kr",
+    "description": "I Amsterdam kan man utforska de pittoreska kanalerna genom båtturer, besöka berömda museer som Rijksmuseum och Van Gogh Museum, cykla längs stadens gator och parker, upptäcka den livliga atmosfären på torget Dam Square, och njuta av kafélivet och det pulserande nattlivet."
   }
 ]
