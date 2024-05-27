@@ -1,26 +1,29 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser";
-import kontakt from "../assets/images/kontakt.png";
+import travelcover from "../assets/images/travelcover.jpg";
 import { BsHeadphones, BsPerson } from "react-icons/bs";
 
 const FormContainer = styled.div`
   max-width: 500px;
   margin: 0 auto;
   padding: 80px;
-  border-radius: 8px;
+  border-radius: 40px;
+  background-color: #f8f2f8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 `;
 
 const FormLabel = styled.label`
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 25px;
   font-family: "Noto Sans Sora Sompeng";
   text-align: center;
+  font-weight: bold;
 `;
 
 const Input = styled.input`
-  width: 100%;
+  width: 90%;
   padding: 12px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -29,16 +32,16 @@ const Input = styled.input`
 `;
 const Container = styled.div`
   position: relative;
-  background-image: url(${kontakt});
-  background-size: 100%;
+  background-image: url(${travelcover});
+  /* background-size: 100%; */
   background-position: center;
   background-attachment: fixed;
   height: 90vh;
   margin-top: 100px;
 
   @media (max-width: 768px) {
-    height: 70vh;
-    background-size: 150%;
+    height: 100vh;
+    /* background-size: 240%; */
   }
 `;
 
@@ -52,7 +55,7 @@ const ImageOverlay = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
 `;
 
 const ImageText = styled.div`
@@ -63,11 +66,11 @@ const ImageText = styled.div`
   line-height: 40px;
   max-width: 80%;
   margin: 0 auto;
-  font-weight: bold;
+  font-weight: bolder;
 `;
 
-const Styledrubrik = styled.h1`
-  font-size: 30px;
+const Styledrubrik = styled.div`
+  font-size: 25px;
   text-align: center;
   padding: -4px;
   font-family: "Noto Sans Sora Sompeng";
@@ -97,12 +100,10 @@ const ButtonContainer = styled.div`
 
 const StyledTextArea = styled.textarea`
   border: 4px solid #bb8c98;
-  width: 100%;
+  width: 90%;
   padding: 12px;
   font-size: 16px;
-
   border-radius: 4px;
-
   @media (max-width: 768px) {
     max-width: 100%;
   }
@@ -117,7 +118,6 @@ const Button = styled.button`
   font-family: "Noto Sans Sora Sompeng";
   margin-bottom: 30px;
   border: 4px solid #bb8c98;
-
   display: inline-block;
   border-radius: 5px;
   cursor: pointer;
@@ -188,7 +188,7 @@ const ListItem = styled.li`
 `;
 
 const Icon = styled.div`
-  padding: 0.8rem;
+  padding: 8px;
   border-radius: 3rem;
   display: flex;
   justify-content: center;
@@ -216,6 +216,17 @@ const Text = styled.div`
   }
 `;
 
+const StyledMap = styled.iframe`
+  width: auto;
+  min-width: 600px;
+  height: 500px;
+  border: 0;
+
+  @media screen and (min-width: 270px) and (max-width: 1070px) {
+    min-width: 400px;
+  }
+`;
+
 function Contact() {
   const data = [
     {
@@ -231,13 +242,13 @@ function Contact() {
     },
   ];
 
-  const initialValues = {
+  const Format = {
     username: "",
     email: "",
     message: "",
   };
 
-  const [formValues, setFormValues] = useState(initialValues);
+  const [formValues, setFormValues] = useState(Format);
   const [error, setError] = useState({});
   const [btnSubmit, setBtnSubmit] = useState(false);
 
@@ -272,7 +283,7 @@ function Contact() {
           }
         );
 
-      setFormValues(initialValues);
+      setFormValues(Format);
     }
   };
 
@@ -357,15 +368,15 @@ function Contact() {
 
       <TravelSection>
         <ImageContainer>
-          <iframe
+          {/* Referense kod från: Jag fick kopiera html kod fron google maps:
+          https://www.google.se/maps/place/V%C3%A5gm%C3%A4stareplatsen/@57.7207029,11.944769,17z/data=!3m1!4b1!4m6!3m5!1s0x464ff4a89bc11f1f:0x4cbb3b2fbfbc7f16!8m2!3d57.7207029!4d11.944769!16s%2Fg%2F1tm288x1?entry=ttu  */}
+          <StyledMap
             title="Karta"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4261.500157269461!2d11.942188712259416!3d57.72070287376666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff4a89bc11f1f%3A0x4cbb3b2fbfbc7f16!2zVsOlZ23DpHN0YXJlcGxhdHNlbg!5e0!3m2!1ssv!2sse!4v1716338838771!5m2!1ssv!2sse"
-            width="420"
-            height="450"
-            allowfullscreen=""
+            allowFullScreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            referrerPolicy="no-referrer-when-downgrade"
+          ></StyledMap>
         </ImageContainer>
         <Content>
           <div className="title">

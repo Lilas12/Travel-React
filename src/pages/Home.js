@@ -1,10 +1,7 @@
 import React from "react";
-
 import video from "../assets/images/video.mp4";
 import styled from "styled-components";
-
 import FilteringDestination from "../components/FilteringDestination";
-import SearchFunction from "../components/SearchFunction";
 
 const Square = styled.div`
   background-color: #070707;
@@ -21,7 +18,7 @@ const Square = styled.div`
   word-break: break-word; */
 `;
 
-const StyledTitle1 = styled.h1`
+const StyledTitle1 = styled.div`
   color: #fff;
   font-size: 20px;
   font-family: "Noto Sans Sora Sompeng";
@@ -64,7 +61,7 @@ const Content = styled.div`
   bottom: 40px;
 `;
 
-const Heading = styled.h1`
+const Heading = styled.div`
   font-size: 50px;
   color: #070707;
   font-family: "Noto Sans Sora Sompeng";
@@ -126,7 +123,7 @@ const LandingPage = () => {
 
       <Square>
         <StyledTitle1>
-          <h1>Explore the World with Our New Travel Website</h1>
+          <h1>Explore the World</h1>
         </StyledTitle1>
         <StyledDescription>
           <p>
@@ -140,12 +137,8 @@ const LandingPage = () => {
 
       <HomeSection id="destination">
         <Info>
-          <h2>
-            Top <span>Destinations</span> In The World
-          </h2>
+          <h2>Top Destinations In The World</h2>
         </Info>
-
-        <SearchFunction />
 
         <FilteringDestination />
       </HomeSection>

@@ -5,13 +5,17 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
 const Section = styled.section`
-  margin-bottom: 9rem;
-  margin-top: 60px;
+  margin-bottom: 5rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+
   position: relative;
+
+  @media (min-width: 768px) {
+    margin-top: 30px;
+  }
   .background {
     img {
       height: 100%;
@@ -38,7 +42,7 @@ const FormContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 3rem;
+  gap: 5rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -53,7 +57,7 @@ const FormContainer = styled.div`
 const Row = styled.div`
   display: flex;
   flex-direction: column;
-  text-align: start;
+  text-align: center;
 
   label {
     font-size: 1rem;
@@ -93,7 +97,7 @@ const DestinationContainer = styled.div`
   justify-content: center;
 `;
 
-const Destination = styled.div`
+const Destinations = styled.div`
   position: relative;
   flex: 1 1 calc(50% - 2rem);
   max-width: calc(50% - 2rem);
@@ -136,13 +140,13 @@ const ImageOverlay = styled.div`
   border-radius: 0.5rem;
 `;
 
-const Name = styled.h3`
+const Name = styled.div`
   color: #fff;
   font-weight: bolder;
   margin: 0;
 `;
 
-const Price = styled.h3`
+const Price = styled.div`
   font-weight: bold;
   color: #fff;
   margin: 0;
@@ -151,7 +155,7 @@ const Price = styled.h3`
 const BookingButton = styled.button`
   background-color: #bb8c98;
   color: #000;
-  padding: 5px 20px;
+  padding: 10px 20px;
   margin-top: 20px;
   border: none;
   cursor: pointer;
@@ -168,12 +172,14 @@ const FilteringDestination = () => {
   const [destination, setDestination] = useState("");
   const [InCheck, setInCheck] = useState("");
   const [destinations, setDestinations] = useState([]);
+  const [checkInDate, setCheckInDate] = useState(null);
+  const [weeks, setWeeks] = useState("");
+  const [travelers, setTravelers] = useState("");
   const handleBooking = () => {
     alert("You will receive confirmation soon");
   };
 
   useEffect(() => {
-    // The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
     const specialDestinations = [...new Set(Travel.map((item) => item.name))];
     setDestinations(specialDestinations);
   }, []);
@@ -206,22 +212,47 @@ const FilteringDestination = () => {
               </select>
             </Row>
             {/* <Row>
-                <label>Check In</label>
-                <input
-                  type="date"
-                  onChange={(event) => setInCheck(event.target.value)}
-                />
-              </Row> */}
+              <label>Check In</label>
+              <input
+                type="date"
+                onChange={(event) => setInCheck(event.target.value)}
+              />
+            </Row> */}
 
             <Row>
               <label>Check In</label>
               <DatePicker
-                selected={InCheck} // Använd selected-prop för att kontrollera valt datum
-                onChange={(date) => setInCheck(date)} // Använd onChange-prop för att uppdatera valt datum
-                dateFormat="yyyy-MM-dd" // Ange datumformat om det behövs
-                minDate={new Date()}
-                placeholderText="Select a date" //
+                selected={checkInDate}
+                onChange={(date) => setCheckInDate(date)}
+                placeholderText="yyyy-MM-dd"
               />
+            </Row>
+
+            <Row>
+              <label>Number of Weeks</label>
+              <select
+                value={weeks}
+                onChange={(event) => setWeeks(event.target.value)}
+              >
+                <option value="">Select Weeks</option>
+                <option value="1">1 week</option>
+                <option value="2">2 weeks</option>
+                <option value="3">3 weeks</option>
+                {/* Lägg till fler alternativ efter behov */}
+              </select>
+            </Row>
+            <Row>
+              <label>Number of Travelers</label>
+              <select
+                value={travelers}
+                onChange={(event) => setTravelers(event.target.value)}
+              >
+                <option value="">Select Travelers</option>
+                <option value="1">1 traveler</option>
+                <option value="2">2 travelers</option>
+                <option value="3">3 travelers</option>
+                {/* Lägg till fler alternativ efter behov */}
+              </select>
             </Row>
             <BookingButton onClick={handleBooking}>Book Now</BookingButton>
           </FormContainer>
@@ -231,7 +262,7 @@ const FilteringDestination = () => {
       <DestinationContainer>
         {filterDestanation.map(({ name, image, price }) => {
           return (
-            <Destination key={name}>
+            <Destinations key={name}>
               <ImageContainer>
                 <img src={image} alt={name} />
               </ImageContainer>
@@ -239,7 +270,7 @@ const FilteringDestination = () => {
                 <Name>{name}</Name>
                 <Price>{price}</Price>
               </ImageOverlay>
-            </Destination>
+            </Destinations>
           );
         })}
       </DestinationContainer>

@@ -9,7 +9,7 @@
 
   {
     "id": "2",
-    "name": "Förenade Arabemiraten",
+    "name": "Arab Emirates",
     "image": "/TravelImage/arabemiraten.png",
     "price": "9500 Kr",
     "description": "The United Arab Emirates has developed rapidly in recent decades and today has a very high standard of living. The country has gained international attention for its spectacular buildings, such as the Burj Khalifa, the world's tallest building, located in Dubai."
@@ -44,7 +44,7 @@
     "name": "Belgien",
     "image": "/TravelImage/belgien.png",
     "price": "3400 Kr",
-    "description": ""
+    "description": "Kingdom of Belgium is a small country, but it has a lot to offer. Belgium was one of the first countries in the EU. In Belgium, you get vibrant cities, cozy small towns, perhaps the world's best beer, and actually some truly fantastic seaside resorts along the coast.It is easy to travel around by buses and trains. Since Belgium is almost as flat as the Netherlands, a cycling holiday is something to consider..."
   },
 
   {
@@ -84,7 +84,7 @@
     "name": "England",
     "image": "/TravelImage/england.png",
     "price": "2000 Kr",
-    "description": "In the northern part of England, including the beautiful Yorkshire, with the charming city of York characterized by old bridges and alleys, numerous small cafes serving afternoon tea with warm scones and jam. In the heart of England lies Warwickshire and Stratford-upon-Avon, Shakespeare's birthplace. Here you will find the beautiful Warwick Castle and its lush gardens. Not far from the world metropolis London lies the famous university city of Oxford."
+    "description": "In the northern part of England, including the beautiful Yorkshire, with the charming city of York characterized by old bridges and alleys, numerous small cafes serving afternoon tea with warm scones and jam. In the heart of England lies Warwickshire and Stratford-upon-Avon, Shakespeare's birthplace."
   },
 
   {
@@ -92,7 +92,7 @@
     "name": "Frankrike",
     "image": "/TravelImage/frankrike.png",
     "price": "4000 Kr",
-    "description": "France is a large, beautiful, exciting, and diverse country in many areas. Interesting history, fascinating food and wine culture, fantastic places, and sights. There is something for everyone to discover and be fascinated by. If you want city life, then Paris is fantastic with shopping, cafes, theaters, and markets. If you wish for sun and sea, the French Riviera is a given option with Nice and Cannes, with plenty of luxury boats and beautiful people who are happy to show off."
+    "description": "France is a large, beautiful, exciting, and diverse country in many areas. Interesting history, fascinating food and wine culture, fantastic places, and sights. There is something for everyone to discover and be fascinated by. If you want city life, then Paris is fantastic with shopping, cafes, theaters, and markets. "
   },
 
   {
@@ -124,7 +124,7 @@
     "name": "Italien",
     "image": "/TravelImage/italien.png",
     "price": "3000 Kr",
-    "description": ""
+    "description": "It has something for most of us: good food and fine wines, football, sun and swimming, great skiing, and lots of culture with many of the world's top attractions. Along the Adriatic coast, there are several lovely, wide beaches, including the well-known classic resorts of Rimini and Riccione."
   },
 
   {
@@ -252,7 +252,7 @@
     "name": "Palastine",
     "image": "/TravelImage/palastine.png",
     "price": "9000 Kr",
-    "description": "The Palestinian tourist area offers a unique blend of rich cultural heritage, historical significance, and breathtaking natural landscapes. Visitors can explore ancient cities like Bethlehem and Jericho, which are steeped in history and offer insights into the region's diverse past. The vibrant markets, traditional cuisine, and warm hospitality of the Palestinian people add to the charm of the experience. Additionally, the stunning landscapes of the West Bank, including the lush hills of Nablus and the picturesque shores of the Dead Sea, provide opportunities for outdoor adventures such as hiking, camping, and swimming. Despite the challenges, Palestine remains a destination of great cultural and historical significance, offering visitors a truly unforgettable experience."
+    "description": "The Palestinian tourist area offers a unique blend of rich cultural heritage, historical significance, and breathtaking natural landscapes. Visitors can explore ancient cities like Bethlehem and Jericho, which are steeped in history and offer insights into the region's diverse past. The vibrant markets, traditional cuisine, and warm hospitality of the Palestinian people add to the charm of the experience."
   },
 
   {
@@ -316,7 +316,7 @@
     "name": "Syria",
     "image": "/TravelImage/syria.png",
     "price": "6950 kr",
-    "description": "In Syria, visitors can explore ancient ruins like Palmyra and Bosra, stroll through the historic streets of Damascus, and marvel at the cultural heritage of Aleppo. They can also enjoy traditional Syrian cuisine and relax on the Mediterranean coast in cities like Latakia and Tartous. However, travelers should be aware of the current security situation and travel advisories before planning a trip to Syria."
+    "description": "In Syria, visitors can explore ancient ruins like Palmyra and Bosra, stroll through the historic streets of Damascus, and marvel at the cultural heritage of Aleppo. They can also enjoy traditional Syrian cuisine and relax on the Mediterranean coast in cities like Latakia and Tartous."
   },
 
   {
@@ -372,7 +372,7 @@
     "name": "USA",
     "image": "/TravelImage/usa.png",
     "price": "13000 Kr",
-    "description": "In the USA, you can explore diverse landscapes, vibrant cities, iconic landmarks, and cultural attractions. From enjoying the natural beauty of national parks to experiencing the bustling energy of cities like New York and Los Angeles, there's something for everyone. Other popular activities include visiting historical sites, attending music and cultural festivals, indulging in diverse cuisine, shopping, and enjoying outdoor adventures like hiking, skiing, and surfing."
+    "description": "In the USA, you can explore diverse landscapes, vibrant cities, iconic landmarks, and cultural attractions. From enjoying the natural beauty of national parks to experiencing the bustling energy of cities like New York and Los Angeles, there's something for everyone."
   },
 
   {

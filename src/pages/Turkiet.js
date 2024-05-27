@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 import styled from "styled-components";
-import turkey from "../assets/images/turkey.png";
+
 import antalya from "../assets/images/antalya.png";
 import bodrum from "../assets/images/bodrum.png";
 import istanbul from "../assets/images/istanbul.mp4";

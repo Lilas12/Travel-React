@@ -20,7 +20,7 @@ const EgyptenSquare = styled.div`
   word-break: break-word; */
 `;
 
-const StyledTitle1 = styled.h1`
+const StyledTitle1 = styled.div`
   color: #1f2041;
   font-size: 20px;
   font-family: "Noto Sans Sora Sompeng";
@@ -83,7 +83,7 @@ const TravelSection2 = styled.section`
 `;
 
 const TravelSection3 = styled.section`
-  background-color: #070707;
+  background-color: #ede9ed;
   display: flex;
   margin: 8px 0;
   gap: 5rem;
@@ -172,7 +172,7 @@ const Content2 = styled.div`
 const Content3 = styled.div`
   .title3 {
     margin: 2px;
-    color: #fff;
+    color: #1f2041;
 
     h1 {
       font-size: 40px;
@@ -229,7 +229,7 @@ const Text2 = styled.div`
 const Text3 = styled.div`
   h3 {
     font-size: 1.5rem;
-    color: #fff;
+    color: #000;
     font-family: "Inter";
 
     @media screen and (min-width: 270px) and (max-width: 1070px) {

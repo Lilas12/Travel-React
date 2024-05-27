@@ -5,6 +5,7 @@ import egypten from "../assets/images/egypten.png";
 import dubai from "../assets/images/dubai.png";
 import grekland from "../assets/images/grekland.png";
 import turkiet from "../assets/images/turkiet.png";
+import SearchFunction from "../components/SearchFunction";
 
 const Square = styled.div`
   background-color: #ede9ed;
@@ -157,6 +158,12 @@ const MoreButton = styled(Link)`
   }
 `;
 
+const CustomLink = styled(Link)`
+  color: #bb8c98; /* Byt ut färgkoden till den önskade färgen */
+  text-decoration: none;
+  font-size: 20px;
+`;
+
 const handleClick = () => {
   const middleOfPage = window.innerHeight / 2 + 70; //
   window.scrollTo({
@@ -195,8 +202,8 @@ const Destination = () => {
               will also find the sun and warmth even during the winter months.
               Egypt is home to many of the world's historical landmarks and
               ancient sites.
-              <Link to="/Egypten">Read More</Link>
             </StyledDesc>
+            <CustomLink to="/Egypten">Read More</CustomLink>
           </LogoWrapper>
 
           <LogoWrapper>
@@ -209,8 +216,8 @@ const Destination = () => {
               large city with significant distances between the different
               districts. The traffic can be quite extensive, which means that
               getting around the city can take time.
-              <Link to="/Dubai">Read More</Link>
             </StyledDesc>
+            <CustomLink to="/Dubai">Read More</CustomLink>
           </LogoWrapper>
         </LogosContainer>
 
@@ -223,8 +230,8 @@ const Destination = () => {
               featuring thousands of islands. The country comprises nine
               traditional geographic regions, and has a population of nearly
               10.4 million. Athens is the nation's capital and largest city.
-              <Link to="/Grekland">Read More</Link>
             </StyledDesc>
+            <CustomLink to="/Grekland">Read More</CustomLink>
           </LogoWrapper>
 
           <LogoWrapper>
@@ -236,13 +243,14 @@ const Destination = () => {
               best known for its sun and beach holidays but it also offers great
               golf courses, interesting excursions, numerous attractions, and,
               not least, a vibrant nightlife
-              <Link to="/Turkiet">Read More</Link>
             </StyledDesc>
+            <CustomLink to="/Turkiet">Read More</CustomLink>
           </LogoWrapper>
         </LogosContainer>
         <MoreButton onClick={handleClick} to="/">
           Hitta mer resor
         </MoreButton>
+        <SearchFunction />
       </CustomersWrapper>
     </>
   );

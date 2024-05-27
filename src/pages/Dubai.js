@@ -26,11 +26,12 @@ const ImageText = styled.div`
   font-family: "Noto Sans Sora Sompeng";
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
   font-weight: bold;
-  margin-top: -400px;
+  margin-top: -200px;
 
   @media (max-width: 1024px) {
     font-size: 40px;
     padding: 10px;
+    margin-top: -540px;
   }
 `;
 
@@ -137,10 +138,14 @@ const Container2 = styled.div`
 `;
 
 const SlideContainer = styled.div`
-  width: 90%;
+  width: 50%;
   margin: 0 auto;
   margin-top: 50px;
   /* margin-bottom: 100px; */
+
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 
   .slick-slide > div {
     margin: 0 10px;
@@ -174,28 +179,45 @@ const SlideContainer = styled.div`
   }
 `;
 
-const HeroText = styled.h2`
-  display: flex;
-  justify-content: center;
-  font-size: 36px;
-  font-family: "Noto Sans Sora Sompeng";
-  @media (max-width: 768px) {
-    font-size: 30px;
+// const HeroText = styled.h2`
+//   display: flex;
+//   justify-content: center;
+//   font-size: 36px;
+//   font-family: "Noto Sans Sora Sompeng";
+//   @media (max-width: 768px) {
+//     font-size: 30px;
+//   }
+// `;
+
+const Title = styled.div`
+  text-align: center;
+  h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    span {
+      color: var(--primary-color);
+    }
+  }
+
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 3rem;
+    }
   }
 `;
 
 const Card = styled.div`
   border: 1px solid #020000;
-  border-radius: 40px;
+  border-radius: 20px;
   margin-top: 50px;
   margin-bottom: 50px;
   overflow: hidden;
-  height: 500px;
+  height: 550px;
   cursor: pointer;
   display: flex;
 
   @media (max-width: 768px) {
-    height: 600px;
+    height: 660px;
   }
 `;
 
@@ -343,7 +365,6 @@ const Dubai = () => {
       </Container>
       <Container2>
         <SlideContainer>
-          <HeroText>Finding different activities in dubai</HeroText>
           <Slider {...settings}>
             {DubaiData.map((item) => (
               <Card key={item.id}>
