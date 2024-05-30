@@ -179,33 +179,6 @@ const SlideContainer = styled.div`
   }
 `;
 
-// const HeroText = styled.h2`
-//   display: flex;
-//   justify-content: center;
-//   font-size: 36px;
-//   font-family: "Noto Sans Sora Sompeng";
-//   @media (max-width: 768px) {
-//     font-size: 30px;
-//   }
-// `;
-
-const Title = styled.div`
-  text-align: center;
-  h2 {
-    font-size: 2rem;
-    margin-top: 20px;
-    span {
-      color: var(--primary-color);
-    }
-  }
-
-  @media (min-width: 768px) {
-    h2 {
-      font-size: 3rem;
-    }
-  }
-`;
-
 const Card = styled.div`
   border: 1px solid #020000;
   border-radius: 20px;

@@ -42,7 +42,7 @@ const FormContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 5rem;
+  gap: 3rem;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -70,13 +70,13 @@ const Row = styled.div`
   input,
   select {
     border: none;
-    width: 100%;
+    width: 117px;
 
     margin-top: 0.7rem;
     background-color: #ede9ed;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-bottom: 6px solid;
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.4rem;
   }
 
   @media screen and (min-width: 280px) and (max-width: 1080px) {
@@ -170,7 +170,7 @@ const BookingButton = styled.button`
 
 const FilteringDestination = () => {
   const [destination, setDestination] = useState("");
-  const [InCheck, setInCheck] = useState("");
+  const [InCheck] = useState("");
   const [destinations, setDestinations] = useState([]);
   const [checkInDate, setCheckInDate] = useState(null);
   const [weeks, setWeeks] = useState("");
@@ -229,7 +229,7 @@ const FilteringDestination = () => {
             </Row>
 
             <Row>
-              <label>Number of Weeks</label>
+              <label>Weeks</label>
               <select
                 value={weeks}
                 onChange={(event) => setWeeks(event.target.value)}
@@ -242,7 +242,7 @@ const FilteringDestination = () => {
               </select>
             </Row>
             <Row>
-              <label>Number of Travelers</label>
+              <label>Travelers</label>
               <select
                 value={travelers}
                 onChange={(event) => setTravelers(event.target.value)}
