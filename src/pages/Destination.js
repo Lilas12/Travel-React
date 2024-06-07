@@ -5,7 +5,6 @@ import egypten from "../assets/images/egypten.png";
 import dubai from "../assets/images/dubai.png";
 import grekland from "../assets/images/grekland.png";
 import turkiet from "../assets/images/turkiet.png";
-import SearchFunction from "../components/SearchFunction";
 
 const Square = styled.div`
   background-color: #ede9ed;
