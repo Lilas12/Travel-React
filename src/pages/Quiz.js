@@ -258,8 +258,8 @@ function Quiz() {
             </h2>
             {score === questions.length && (
               <h3>
-                "Congratulations 🎉! You win a trip with us. Contact us for more
-                info."
+                "Congratulations 🎉! you get a discount for your trip. Contact
+                us for more info."
               </h3>
             )}
 

@@ -250,7 +250,7 @@ const Destination = () => {
         <MoreButton onClick={handleClick} to="/">
           Hitta mer resor
         </MoreButton>
-        <SearchFunction />
+        {/* <SearchFunction /> */}
       </CustomersWrapper>
     </>
   );

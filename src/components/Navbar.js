@@ -23,20 +23,26 @@ function Navbar() {
     <div className="navbar-container">
       <div className="logo">
         <Link to="/">
-          <img src="/logo/logo.png" alt="Logo" />
+          <img src="/logo/logo3.png" alt="Logo3" />
         </Link>
       </div>
       <nav ref={nav} className={isOpen ? "responsive_nav" : ""}>
         <ul>
-          {/* <li>
-            <Link to="/om-oss" onClick={handleLinkClick}>
-              Om-Oss
+          <li>
+            <Link to="/search" onClick={handleLinkClick}>
+              Search
             </Link>
-          </li> */}
+          </li>
 
           <li>
             <Link to="/Destination" onClick={handleLinkClick}>
               Destination
+            </Link>
+          </li>
+
+          <li>
+            <Link to="/CarRental" onClick={handleLinkClick}>
+              CarRental
             </Link>
           </li>
 

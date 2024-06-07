@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import emailjs from "@emailjs/browser";
+import axios from "axios";
 import travelcover from "../assets/images/travelcover.jpg";
 import { BsHeadphones, BsPerson } from "react-icons/bs";
 
@@ -30,10 +30,10 @@ const Input = styled.input`
   border-radius: 4px;
   border: 4px solid #bb8c98;
 `;
+
 const Container = styled.div`
   position: relative;
   background-image: url(${travelcover});
-  /* background-size: 100%; */
   background-position: center;
   background-attachment: fixed;
   height: 90vh;
@@ -41,7 +41,6 @@ const Container = styled.div`
 
   @media (max-width: 768px) {
     height: 100vh;
-    /* background-size: 240%; */
   }
 `;
 
@@ -234,7 +233,6 @@ function Contact() {
       icon: <BsPerson />,
       color: "pink",
     },
-
     {
       description: "24/7 Customer Support",
       icon: <BsHeadphones />,
@@ -259,31 +257,35 @@ function Contact() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setError(validation(formValues));
+    const formErrors = validation(formValues);
+    setError(formErrors);
     setBtnSubmit(true);
 
-    if (Object.keys(error).length === 0) {
-      emailjs
-        .sendForm(
-          "service_9bs5ffm",
-          "template_lbebtqc",
-          event.target,
-          "dM70lb3dxTelZhfez"
-        )
-        .then(
-          (response) => {
-            console.log(
-              "Email sent successfully!",
-              response.status,
-              response.text
-            );
-          },
-          (error) => {
-            console.error("Email could not be sent.", error);
-          }
-        );
+    if (Object.keys(formErrors).length === 0) {
+      const serviceID = "service_9bs5ffm";
+      const templateID = "template_lbebtqc";
+      const userID = "dM70lb3dxTelZhfez";
 
-      setFormValues(Format);
+      const templateParams = {
+        username: formValues.username,
+        email: formValues.email,
+        message: formValues.message,
+      };
+
+      axios
+        .post("https://api.emailjs.com/api/v1.0/email/send", {
+          service_id: serviceID,
+          template_id: templateID,
+          user_id: userID,
+          template_params: templateParams,
+        })
+        .then((response) => {
+          console.log("Email sent successfully!", response.data);
+          setFormValues(Format);
+        })
+        .catch((error) => {
+          console.error("Email could not be sent.", error);
+        });
     }
   };
 
@@ -291,7 +293,7 @@ function Contact() {
     const formErrors = {};
 
     if (!values.username) {
-      formErrors.username = "Please fil this field";
+      formErrors.username = "Please fill this field";
     }
 
     if (!values.email) {
@@ -321,10 +323,8 @@ function Contact() {
         <Styledrubrik>
           <h1>Contact Us</h1>
         </Styledrubrik>
-
         <form onSubmit={handleSubmit}>
           <FormLabel type="name">Name</FormLabel>
-
           <Input
             required
             type="text"
@@ -368,8 +368,6 @@ function Contact() {
 
       <TravelSection>
         <ImageContainer>
-          {/* Referense kod från: Jag fick kopiera html kod fron google maps:
-          https://www.google.se/maps/place/V%C3%A5gm%C3%A4stareplatsen/@57.7207029,11.944769,17z/data=!3m1!4b1!4m6!3m5!1s0x464ff4a89bc11f1f:0x4cbb3b2fbfbc7f16!8m2!3d57.7207029!4d11.944769!16s%2Fg%2F1tm288x1?entry=ttu  */}
           <StyledMap
             title="Karta"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4261.500157269461!2d11.942188712259416!3d57.72070287376666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ff4a89bc11f1f%3A0x4cbb3b2fbfbc7f16!2zVsOlZ23DpHN0YXJlcGxhdHNlbg!5e0!3m2!1ssv!2sse!4v1716338838771!5m2!1ssv!2sse"

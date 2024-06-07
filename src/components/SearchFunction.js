@@ -190,11 +190,11 @@ const SearchContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
-  margin-top: 50px;
+  margin-top: 160px;
 
   @media (max-width: 768px) {
     margin-left: 1rem;
-    margin-top: 20px;
+    margin-top: 120px;
     padding: 20px;
   }
 `;

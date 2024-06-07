@@ -4,16 +4,7 @@
     "name": "Albania",
     "image": "/TravelImage/albania.png",
     "price": "3500 Kr",
-    "description": "Welcome to Albania a country that is relatively new on the Scandinavian holiday map but is predicted to have an exciting future as a new destination comparable to its neighbors around the Mediterranean. Albania boasts dramatic landscapes, beautiful beaches, and excellent hotels in a wide range of prices. As if that wasn't enough, you can also experience a lot of exciting culture and delightful culinary traditions, of which the Albanians are very proud.",
-    "restaurants": [
-      {
-        "name": "Mullixhiu",
-        "type": "Traditional Albanian cuisine",
-        "price_range": "Moderate",
-        "rating": 4.5,
-        "address": "Rruga Sami Frashëri, Tirana, Albania"
-      }
-    ]
+    "description": "Welcome to Albania a country that is relatively new on the Scandinavian holiday map but is predicted to have an exciting future as a new destination comparable to its neighbors around the Mediterranean. Albania boasts dramatic landscapes, beautiful beaches, and excellent hotels in a wide range of prices. As if that wasn't enough, you can also experience a lot of exciting culture and delightful culinary traditions, of which the Albanians are very proud."
   },
 
   {
