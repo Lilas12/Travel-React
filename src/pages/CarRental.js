@@ -182,7 +182,7 @@ const CarRental = () => {
   const handleConfirmation = (car) => {
     setSelectedCar(car);
     setBookingConfirmed(true);
-    setCars([]); // Clear the car list when a booking is confirmed
+    setCars([]);
   };
 
   // Function to reset form and booking status for a new booking
