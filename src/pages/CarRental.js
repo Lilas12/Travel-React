@@ -148,7 +148,6 @@ const CarRental = () => {
   const [bookingConfirmed, setBookingConfirmed] = useState(false);
   const [error, setError] = useState("");
 
-  // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!destination || !pickUpDate || !dropOffDate || !carType) {
@@ -178,14 +177,13 @@ const CarRental = () => {
     setError("");
   };
 
-  // Function to handle booking confirmation
   const handleConfirmation = (car) => {
     setSelectedCar(car);
     setBookingConfirmed(true);
     setCars([]);
   };
+  // här är en funktion för att starta om funktionen
 
-  // Function to reset form and booking status for a new booking
   const handleNewBooking = () => {
     setBookingConfirmed(false);
     setSelectedCar({});
