@@ -51,10 +51,6 @@ nav a {
   text-decoration: none;
 }
 
-nav a:hover {
-  color: var(--secondaryColor);
-}
-
 .navbar-container .nav-btn {
   padding: 1px;
   /* padding: 5px; */
