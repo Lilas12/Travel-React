@@ -249,7 +249,6 @@ function SamplePrevArrow(props) {
   );
 }
 const Dubai = () => {
-  // Referanse kod from: https://react-slick.neostack.com/docs/get-started and https://www.npmjs.com/package/react-slick
   const settings = {
     dots: true,
     infinite: false,

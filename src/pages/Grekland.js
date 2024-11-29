@@ -1,5 +1,4 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import styled from "styled-components";
 import crete from "../assets/images/crete.png";
 import rhodos from "../assets/images/rhodos.png";

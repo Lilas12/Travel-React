@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+
 import styled from "styled-components";
 
 import antalya from "../assets/images/antalya.png";
@@ -9,15 +9,13 @@ import istanbul from "../assets/images/istanbul.mp4";
 const TurkeySquare = styled.div`
   background-color: #f8f2f8;
   color: #000;
-  /* padding: 10px; */
+
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   font-weight: bold;
   margin-top: -40px;
-  /*
-  word-break: break-word; */
 `;
 
 const StyledTitle1 = styled.h1`
@@ -25,7 +23,6 @@ const StyledTitle1 = styled.h1`
   font-size: 20px;
   font-family: "Noto Sans Sora Sompeng";
   margin: 20px;
-  /* word-break: break-word; */
   margin-top: 90px;
 
   @media (max-width: 768px) {
@@ -52,7 +49,6 @@ const TravelSection2 = styled.section`
   margin: 8px 0;
   gap: 5rem;
   margin-top: -20px;
-  /* margin-bottom: 10px; */
 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
   padding: 2rem;

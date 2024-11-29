@@ -6,16 +6,12 @@ import FilteringDestination from "../components/FilteringDestination";
 const Square = styled.div`
   background-color: #070707;
   color: #fff;
-  /* padding: 10px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   font-weight: bold;
   margin-top: 0px;
-  /* margin-top: 100px; */
-  /*
-  word-break: break-word; */
 `;
 
 const StyledTitle1 = styled.div`
@@ -23,7 +19,6 @@ const StyledTitle1 = styled.div`
   font-size: 20px;
   font-family: "Noto Sans Sora Sompeng";
   margin: 20px;
-  /* word-break: break-word; */
   margin-top: 90px;
 
   @media (max-width: 768px) {

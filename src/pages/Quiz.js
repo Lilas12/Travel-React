@@ -5,7 +5,7 @@ import quiz2 from "../assets/images/quiz2.mp4";
 
 const Content = styled.div`
   position: absolute;
-  top: 60%;
+  top: 61%;
   left: 53%;
   transform: translate(-50%, -50%);
   text-align: center;

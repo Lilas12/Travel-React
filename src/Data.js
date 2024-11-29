@@ -29,8 +29,6 @@ export const DubaiData = [
     description:
       "Whether you're coming for the fun fair, the food, the nightly cultural entertainment or authentic shopping, Global Village has something for everyone. You'll find more than 90 cultures showcasing their local products within 27 lavish pavilions and over 175 rides, games and attractions.",
 
-    // Referense to text: https://www.visitdubai.com/en/places-to-visit/global-village
-
     img: require("./assets/images/global.png"),
   },
 ];
