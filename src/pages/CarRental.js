@@ -27,18 +27,6 @@ const StyledTitle1 = styled.h1`
   }
 `;
 
-const StyledDescription = styled.div`
-  max-width: 60%;
-  padding: 20px;
-  font-size: 20px;
-  font-family: "Inter";
-  margin: -25px auto;
-  line-height: 1.2;
-  word-break: break-word;
-  text-align: left;
-  margin-bottom: 20px;
-`;
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -200,15 +188,6 @@ const CarRental = () => {
         <StyledTitle1>
           <h1>Rent a Car</h1>
         </StyledTitle1>
-        <StyledDescription>
-          <p>
-            Renting a car is a popular option for exploring various countries
-            and regions around the world. Whether you're traveling for leisure,
-            business, or perhaps a combination of both, having access to a car
-            can provide you with the freedom and flexibility to discover places
-            on your own schedule and at your own pace.
-          </p>
-        </StyledDescription>
       </CarSquare>
       <Container>
         <Title>Rent a Car</Title>
